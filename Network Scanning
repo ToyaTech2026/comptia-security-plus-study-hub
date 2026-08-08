@@ -1,0 +1,16 @@
+### 🔍 Lab 1: Network Reconnaissance & Service Discovery via Nmap
+- **Objective:** Identify active network nodes, open port metrics, and underlying software versions on a target host to map potential attack surfaces.
+- **Target Host:** `scanme.nmap.org` (Authorized testing environment)
+- **Execution Command:** `nmap -sV scanme.nmap.org`
+
+#### 📊 Auditing Findings & Logs
+```text
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.13 (Ubuntu Linux; protocol 2.0)
+80/tcp   open  http    Apache httpd 2.4.7 ((Ubuntu))
+9929/tcp open  nping-echo Nping echo
+```
+
+#### 🧠 Quality Control Analysis (RCA)
+- **Risk Identified:** The target host is exposing Port 80 (Unencrypted HTTP) and Port 22 (SSH). 
+- **Remediation Strategy:** From a compliance stance, standard HTTP (Port 80) should be disabled and forced over HTTPS (Port 443) using SSL/TLS certificates to mitigate packet-sniffing risks. The OpenSSH version found (6.6.1) should be cross-referenced with CVE databases to check for legacy vulnerabilities requiring a patching cycle.
