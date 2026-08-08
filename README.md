@@ -17,8 +17,7 @@ Click the directory links below to view my technical summary notes, core termino
 *   **[📁 Domain 5.0: Security Program Management and Oversight](./domain-5-management/)**
     *   *Focus:* Risk assessments, third-party vendor governance, business impact analysis (BIA), and privacy compliance standards (GDPR/HIPAA).
 
-## 🧰 Applied Practical Labs
-To bridge Security+ theory with my Azure Cloud goals, I have documented the following hands-on simulations:
-1.  **Input Validation Firewall:** Mitigating prompt-injection vulnerabilities in application layer scripts.
-2.  **Network Isolation Topology:** Configuring implicit-deny Network Security Group (NSG) rulesets for internal cloud subnets.
-3.  **Data at Rest Encryption:** Hardening secret storage infrastructure by disabling public network endpoints via Azure Key Vault.
+## 🛠️ Hands-On Labs Logged
+*As I complete practical labs, I document the procedures here:*
+1. **Network Scanning:** Investigating open ports and services using `Nmap`.
+2. **Traffic Analysis:** Analyzing packet captures via `Wireshark` to identify unencrypted credential leaks.
