@@ -1,0 +1,12 @@
+- **Tooling Used:** Wireshark Packet Analyzer & Linux Terminal (`dig`)
+- **Protocol Evaluated:** DNS (Domain Name System) - UDP Port 53
+- **Execution Command:** `dig securitypluscertification.com`
+
+#### 📊 Linux Terminal Output Audit
+The `dig` utility returned the official authoritative answer section, mapping the target domain directly to its corresponding A-record IP address parameters:
+```text
+;; ANSWER SECTION:
+securitypluscertification.com.	2452	IN	A	76.223.54.146
+securitypluscertification.com.	2452	IN	A	13.248.169.48
+```
+
